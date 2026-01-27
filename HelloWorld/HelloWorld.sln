@@ -15,6 +15,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InheritanceInvestigation", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionInvestigation", "ExceptionInvestigation\ExceptionInvestigation.csproj", "{16A06608-6CEC-46C2-B351-94B3592A357B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseIntroduction", "DatabaseIntroduction\DatabaseIntroduction.csproj", "{21F2F3FB-93C7-4738-8E3B-831D16B7ACFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserDao", "UserDao\UserDao.csproj", "{179871AC-F520-4A34-9205-AC149D8B3A58}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "UserDaoSharedProject", "UserDaoSharedProject\UserDaoSharedProject.shproj", "{3BEB4369-9AA9-472B-AF18-AD34C5DDA2C2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,11 +51,23 @@ Global
 		{16A06608-6CEC-46C2-B351-94B3592A357B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16A06608-6CEC-46C2-B351-94B3592A357B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16A06608-6CEC-46C2-B351-94B3592A357B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21F2F3FB-93C7-4738-8E3B-831D16B7ACFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21F2F3FB-93C7-4738-8E3B-831D16B7ACFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21F2F3FB-93C7-4738-8E3B-831D16B7ACFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21F2F3FB-93C7-4738-8E3B-831D16B7ACFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{179871AC-F520-4A34-9205-AC149D8B3A58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{179871AC-F520-4A34-9205-AC149D8B3A58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{179871AC-F520-4A34-9205-AC149D8B3A58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{179871AC-F520-4A34-9205-AC149D8B3A58}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BD3D4F3B-0B41-491A-8A7B-35185EEAE3BF}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		UserDaoSharedProject\UserDaoSharedProject.projitems*{179871ac-f520-4a34-9205-ac149d8b3a58}*SharedItemsImports = 5
+		UserDaoSharedProject\UserDaoSharedProject.projitems*{3beb4369-9aa9-472b-af18-ad34c5dda2c2}*SharedItemsImports = 13
 	EndGlobalSection
 EndGlobal

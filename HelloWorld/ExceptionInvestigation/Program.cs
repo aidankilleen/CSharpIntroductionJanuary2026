@@ -82,8 +82,6 @@ try
     Console.WriteLine(ex.Message);
 }
 
-Exception
-
 
 
 
