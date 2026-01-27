@@ -9,8 +9,6 @@ namespace PlayingCardExample
     internal class Deck
     {
         private Card[] cards = new Card[52];
-
-
         public Deck()
         {
             //cards[0] = new Card { Value = 1, Suit = 1 };

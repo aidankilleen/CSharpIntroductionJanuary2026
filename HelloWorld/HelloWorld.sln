@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringInvestigation", "Stri
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayingCardExample", "PlayingCardExample\PlayingCardExample.csproj", "{6084AB1B-3117-4F79-B00E-EF742098D211}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InheritanceInvestigation", "InheritanceInvestigation\InheritanceInvestigation.csproj", "{3DA1438F-78FD-4204-A453-15A055366326}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionInvestigation", "ExceptionInvestigation\ExceptionInvestigation.csproj", "{16A06608-6CEC-46C2-B351-94B3592A357B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{6084AB1B-3117-4F79-B00E-EF742098D211}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6084AB1B-3117-4F79-B00E-EF742098D211}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6084AB1B-3117-4F79-B00E-EF742098D211}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DA1438F-78FD-4204-A453-15A055366326}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DA1438F-78FD-4204-A453-15A055366326}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DA1438F-78FD-4204-A453-15A055366326}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DA1438F-78FD-4204-A453-15A055366326}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16A06608-6CEC-46C2-B351-94B3592A357B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16A06608-6CEC-46C2-B351-94B3592A357B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16A06608-6CEC-46C2-B351-94B3592A357B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16A06608-6CEC-46C2-B351-94B3592A357B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
