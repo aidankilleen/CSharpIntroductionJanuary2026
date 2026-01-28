@@ -69,7 +69,7 @@ namespace UserDaoLibrary
             return user;
         }
         
-        public int Delete(int id)
+        public int Delete(long id)
         {
             String sql = $"DELETE FROM users WHERE id = {id}";
             var cmd = conn.CreateCommand();

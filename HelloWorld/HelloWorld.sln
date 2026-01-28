@@ -21,6 +21,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserDao", "UserDao\UserDao.
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "UserDaoSharedProject", "UserDaoSharedProject\UserDaoSharedProject.shproj", "{3BEB4369-9AA9-472B-AF18-AD34C5DDA2C2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticInvestigation", "StaticInvestigation\StaticInvestigation.csproj", "{8598F467-081B-4525-960D-62A88FB43F04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegateInvestigation", "DelegateInvestigation\DelegateInvestigation.csproj", "{A32F77AD-2D7F-413D-9CCD-6BB07191DBBA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsInvestigation", "WindowsFormsInvestigation\WindowsFormsInvestigation.csproj", "{44AF447E-B439-4992-800A-450F83097891}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,6 +65,18 @@ Global
 		{179871AC-F520-4A34-9205-AC149D8B3A58}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{179871AC-F520-4A34-9205-AC149D8B3A58}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{179871AC-F520-4A34-9205-AC149D8B3A58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8598F467-081B-4525-960D-62A88FB43F04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8598F467-081B-4525-960D-62A88FB43F04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8598F467-081B-4525-960D-62A88FB43F04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8598F467-081B-4525-960D-62A88FB43F04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A32F77AD-2D7F-413D-9CCD-6BB07191DBBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A32F77AD-2D7F-413D-9CCD-6BB07191DBBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A32F77AD-2D7F-413D-9CCD-6BB07191DBBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A32F77AD-2D7F-413D-9CCD-6BB07191DBBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44AF447E-B439-4992-800A-450F83097891}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44AF447E-B439-4992-800A-450F83097891}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44AF447E-B439-4992-800A-450F83097891}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44AF447E-B439-4992-800A-450F83097891}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -69,5 +87,7 @@ Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		UserDaoSharedProject\UserDaoSharedProject.projitems*{179871ac-f520-4a34-9205-ac149d8b3a58}*SharedItemsImports = 5
 		UserDaoSharedProject\UserDaoSharedProject.projitems*{3beb4369-9aa9-472b-af18-ad34c5dda2c2}*SharedItemsImports = 13
+		UserDaoSharedProject\UserDaoSharedProject.projitems*{44af447e-b439-4992-800a-450f83097891}*SharedItemsImports = 5
+		UserDaoSharedProject\UserDaoSharedProject.projitems*{a32f77ad-2d7f-413d-9ccd-6bb07191dbba}*SharedItemsImports = 5
 	EndGlobalSection
 EndGlobal

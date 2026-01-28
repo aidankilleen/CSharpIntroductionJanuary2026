@@ -16,7 +16,8 @@ namespace UserDaoLibrary
 
         public override string ToString()
         {
-            return $"{Id} {Name} {Email} {(Active?"Active":"Inactive")}";
+            //return $"{Id} {Name} {Email} {(Active?"Active":"Inactive")}";
+            return $"{Name}";
         }
 
     }

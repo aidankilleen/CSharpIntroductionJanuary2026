@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <Import Project="..\UserDaoSharedProject\UserDaoSharedProject.projitems" Label="Shared" />
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.SQLite" Version="2.0.2" />
+  </ItemGroup>
+
+</Project>
