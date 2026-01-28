@@ -6,7 +6,7 @@ namespace WindowsFormsInvestigation
 {
     public partial class Form1 : Form
     {
-        private UserDao dao = new UserDao();
+        private UserDao dao = new UserDao("c:\\work\\training\\java\\users_production.db");
 
         public Form1()
         {
@@ -43,6 +43,8 @@ namespace WindowsFormsInvestigation
                 btnDelete.Enabled = true;
                 btnNew.Enabled = true;
                 btnCreate.Enabled = false;
+
+                lblStatus.Text = $"{selectedUser.Id}";
             }
             else
             {
@@ -118,7 +120,7 @@ namespace WindowsFormsInvestigation
 
             btnCreate.Enabled = false;
             btnNew.Enabled = true;
-            btnCancel.Enabled = false;  
+            btnCancel.Enabled = false;
 
         }
 
@@ -132,6 +134,57 @@ namespace WindowsFormsInvestigation
             btnNew.Enabled = true;
             btnCreate.Enabled = false;
             btnCancel.Enabled = false;
+        }
+
+        private void btnWork_Click(object sender, EventArgs e)
+        {
+            pbStatus.Visible = true;
+            for (int i = 0; i <= 100; i++)
+            {
+                Debug.WriteLine($"working {i}");
+                pbStatus.Value = i;
+
+                Thread.Sleep(100);
+            }
+            pbStatus.Visible = false;
+        }
+
+        private void btnWorkSmarter_Click(object sender, EventArgs e)
+        {
+            pbStatus.Visible = true;
+            btnWorkSmarter.Enabled = false;
+
+            bwDoWork.RunWorkerAsync();
+        }
+
+        private void bwDoWork_DoWork(object sender, System.ComponentModel.DoWorkEventArgs e)
+        {
+            for (int i = 0; i <= 100; i++)
+            {
+                Thread.Sleep(100);
+                bwDoWork.ReportProgress(i);
+            }
+        }
+
+        private void bwDoWork_ProgressChanged(
+            object sender,
+            System.ComponentModel.ProgressChangedEventArgs e)
+        {
+            pbStatus.Value = e.ProgressPercentage;
+        }
+
+        private void bwDoWork_RunWorkerCompleted(object sender, System.ComponentModel.RunWorkerCompletedEventArgs e)
+        {
+            pbStatus.Visible = false;
+            btnWorkSmarter.Enabled = true;
+        }
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            dao.Close();
+
+
+            
         }
     }
 }
